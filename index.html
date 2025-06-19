@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dead Man Walking - Katnificent</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+  <main class="player-container">
+    <img src="images/5b569690-929e-4a4c-8ff8-7b8c1b0dfd56.png" alt="EP Cover" class="cover-art" id="coverArt">
+    <h1>Dead Man Walking</h1>
+    <h2>Katnificent</h2>
+
+    <ul class="tracklist">
+      <li data-track="0">1. Dreaming</li>
+      <li data-track="1">2. P.L</li>
+      <li data-track="2">3. Hype You Up</li>
+      <li data-track="3">4. It Ain’t Easy</li>
+      <li data-track="4">5. Take Care</li>
+    </ul>
+
+    <div class="controls">
+      <button id="prevBtn">⏮</button>
+      <button id="playPauseBtn">▶️</button>
+      <button id="nextBtn">⏭</button>
+    </div>
+
+    <div class="progress">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="progressBar" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audioPlayer" src="music/dreaming.mp3"></audio>
+  </main>
+</body>
+</html>

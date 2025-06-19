@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.background {
+  background: url('../images/cover.png') no-repeat center center/cover;
+  filter: blur(20px) brightness(0.4);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+}
+
+.player-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cover-art {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #8B0000;
+  transition: all 0.3s ease-in-out;
+}
+
+.tracklist li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.tracklist li:hover,
+.tracklist li.active {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.controls button {
+  font-size: 2rem;
+  margin: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
